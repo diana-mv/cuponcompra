@@ -28,6 +28,17 @@ public class Item {
 	public Item() {
 		super();
 	}
+	
+	/**
+	 * @param id
+	 * @param price
+	 */
+	public Item(String id, Double price) {
+		super();
+		this.id = id;
+		this.price = price;
+	}
+
 	/**
 	 * @return the id
 	 */

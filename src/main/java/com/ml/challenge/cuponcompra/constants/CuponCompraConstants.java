@@ -41,6 +41,11 @@ public class CuponCompraConstants {
 	 * Atributos a recuperar en consulta de items
 	 */
 	public static final String ATRIBUTOS_ID_PRECIO = "id,price";
+	
+	/**
+	 * Numero de elementos para considerar en el top
+	 */
+	public static final int NUM_ELEMENTOS_TOP= 5;
 
 	/**
 	 * Constructor

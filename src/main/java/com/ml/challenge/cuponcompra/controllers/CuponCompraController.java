@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ml.challenge.cuponcompra.constants.CuponCompraConstants;
 import com.ml.challenge.cuponcompra.models.ItemTop;
 import com.ml.challenge.cuponcompra.models.ItemsCuponRequest;
 import com.ml.challenge.cuponcompra.models.ItemsCuponResponse;
@@ -64,7 +65,7 @@ public class CuponCompraController {
 	public List<ItemTop> obtenerTopFavoritos() {
 		logger.info("---- Entra a obtenerTopFavoritos -----");
 
-		return bitacoraFavoritosService.obtenerTopFavoritos(5);
+		return bitacoraFavoritosService.obtenerTopFavoritos(CuponCompraConstants.NUM_ELEMENTOS_TOP);
 	}
 	
 }
